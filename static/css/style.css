@@ -1,11 +1,3 @@
-:root{
-    --diego_color: #b115c3;
-    --vega_color: #c33b15;
-    --humberto_color: #d3d135;
-    --vera_color: #c3156f;
-    --paredes_color: #294dcf;
-}
-
 @font-face {
     font-family: MedievalSharp;
     src: url('fonts/MedievalSharp/MedievalSharp-Regular.ttf');

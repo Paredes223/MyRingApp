@@ -21,7 +21,7 @@ function selected() {
     document.getElementsByClassName("header")[0].classList.add("vanish");
     document.getElementsByClassName("name")[currentIndex].classList.add("vanish");
     setTimeout(() => { 
-        document.getElementsByClassName("header")[currentIndex].style.opacity=0; 
+        document.getElementsByClassName("header")[0].style.opacity=0; 
         document.getElementsByClassName("name")[currentIndex].style.opacity=0; 
     }, 250);
     setTimeout(() => { 
@@ -32,7 +32,7 @@ function selected() {
     //desaparecer los cuadrados
     document.getElementsByClassName("summon_squares")[currentIndex].classList.add("summon_disappear");
     setTimeout(() => { document.getElementsByClassName("summon_squares")[currentIndex].style.display="none"; }, 500);
-    setTimeout(() => { document.getElementsByClassName("summon_squares")[0].classList.remove("summon_disappear"); }, 501);
+    setTimeout(() => { document.getElementsByClassName("summon_squares")[currentIndex].classList.remove("summon_disappear"); }, 501);
 
     //expandir el circulo giratorio
     document.getElementsByClassName("summon_circles")[currentIndex].classList.remove("summon_appear");
@@ -57,7 +57,7 @@ function deselected() {
     document.getElementsByClassName("header")[0].classList.add("fadein");
     document.getElementsByClassName("name")[currentIndex].classList.add("fadein");
     setTimeout(() => { 
-        document.getElementsByClassName("header")[currentIndex].style.opacity=1; 
+        document.getElementsByClassName("header")[0].style.opacity=1; 
         document.getElementsByClassName("name")[currentIndex].style.opacity=1; 
     }, 250);
     setTimeout(() => { 
