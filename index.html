@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/figures.css">
+    <link rel="stylesheet" type="text/css" href="static/css/animations.css">
+</head>
+<body>
+    <div class="characterSel">
+        <div class=header>
+            <h2>¿QUIÉN ERES?</h2>
+            <div class="carousel-arrow prev-arrow expand_l" onclick="prevSlide()">&#10094;</div>
+            <div class="carousel-arrow next-arrow expand_r" onclick="nextSlide()">&#10095;</div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <div class="carousel-item" style="display: block; --col: #b115c3">
+                    
+                    <div class="name">
+                        <h1>Diegod</h1>
+                    </div>
+                    <div class="summon_all">
+                        <div class="bg_circle" style="display: none;"></div>
+                        <div class="summon_appear summon_circles">
+                            <div class="circle"></div>
+                            <img class="spin img_circle" src="static/images/diego_circulo.png"></img>
+                            <div class="circle s"></div>
+                        </div>
+                        <div class="summon_squares">    
+                            <div class="icon">
+                                <img class="animate-delay-04 summon_appear_2 img_icon" src="static/images/diego_simbolo.png"></img>
+                            </div>
+                            <a class="summon_squares_link" onclick="selected()">
+                                <div class="watevs animate-delay-03 summon_appear_2"><div class="animate-infinite glow diamond"></div></div>
+                                <div class="animate-delay-02 summon_appear_2 square"></div>
+                            </a> 
+                        </div> 
+                    </div>              
+
+                </div>
+                <div class="carousel-item" style="display: none; --col: #c33b15">
+                    <div class="name">
+                        <h1>Vega</h1>
+                    </div>
+                    <div class="summon_all">
+                        <div class="bg_circle" style="display: none;"></div>
+                        <div class="summon_appear summon_circles">
+                            <div class="circle"></div>
+                            <img class="spin img_circle" src="static/images/vega_circulo.png"></img>
+                            <div class="circle s"></div>
+                        </div>
+                        <div class="summon_squares">   
+                            <div class="icon">
+                                <img class="animate-delay-04 summon_appear_2 img_icon" src="static/images/vega_simbolo.png"></img>
+                            </div> 
+                            <a class="summon_squares_link" onclick="selected()">
+                                <div class="watevs animate-delay-03 summon_appear_2"><div class="animate-infinite glow diamond"></div></div>
+                                <div class="animate-delay-02 summon_appear_2 square"></div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="display: none; --col: #d3d135">
+                    <div class="name">
+                        <h1>Humberto</h1>
+                    </div>
+                    <div class="summon_all">
+                        <div class="bg_circle" style="display: none;"></div>
+                        <div class="summon_appear summon_circles">
+                            <div class="circle"></div>
+                            <img class="spin img_circle" src="static/images/humberto_circulo.png"></img>
+                            <div class="circle s"></div>
+                        </div>
+                        <div class="summon_squares">  
+                            <div class="icon">
+                                <img class="animate-delay-04 summon_appear_2 img_icon" src="static/images/humberto_simbolo.png"></img>
+                            </div>  
+                            <a class="summon_squares_link" onclick="selected()">
+                                <div class="watevs animate-delay-03 summon_appear_2"><div class="animate-infinite glow diamond"></div></div>
+                                <div class="animate-delay-02 summon_appear_2 square"></div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="display: none; --col: #c3156f">
+                    <div class="name">
+                        <h1>Vera</h1>
+                    </div>
+                    <div class="summon_all">
+                        <div class="bg_circle" style="display: none;"></div>
+                        <div class="summon_appear summon_circles">
+                            <div class="circle"></div>
+                            <img class="spin img_circle" src="static/images/vera_circulo.png"></img>
+                            <div class="circle s"></div>
+                        </div>
+                        <div class="summon_squares">    
+                            <div class="icon">
+                                <img class="animate-delay-04 summon_appear_2 img_icon" src="static/images/vera_simbolo.png"></img>
+                            </div>
+                            <a class="summon_squares_link" onclick="selected()">
+                                <div class="watevs animate-delay-03 summon_appear_2"><div class="animate-infinite glow diamond"></div></div>
+                                <div class="animate-delay-02 summon_appear_2 square"></div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="display: none; --col: #294dcf">
+                    <div class="name">
+                        <h1>Paredes</h1>
+                    </div>
+                    <div class="summon_all">
+                        <div class="bg_circle" style="display: none;"></div>
+                        <div class="summon_appear summon_circles">
+                            <div class="circle"></div>
+                            <img class="spin img_circle" src="static/images/paredes_circulo.png"></img>
+                            <div class="circle s"></div>
+                        </div>
+                        <div class="summon_squares">   
+                            <div class="icon">
+                                <img class="animate-delay-04 summon_appear_2 img_icon" src="static/images/paredes_simbolo.png"></img>
+                            </div> 
+                            <a class="summon_squares_link" onclick="selected()">
+                                <div class="watevs animate-delay-03 summon_appear_2"><div class="animate-infinite glow diamond"></div></div>
+                                <div class="animate-delay-02 summon_appear_2 square"></div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+        </div>
+    </div>
+    <div class="password_cont_cent" style="display: none;">
+        <div class="password_cont">
+            <svg class="patternlock" id="lock" view-box="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <g class="lock-actives"></g>    
+                <g class="lock-lines"></g>
+                <g class="lock-dots">
+                    <circle cx="50%" cy="10%" r="8" />
+                    
+                    <circle cx="35%" cy="35%" r="8" />
+                    <circle cx="65%" cy="35%" r="8" />
+
+                    <circle cx="10%" cy="50%" r="8" />
+                    <circle cx="50%" cy="50%" r="8" />
+                    <circle cx="90%" cy="50%" r="8" />
+
+                    <circle cx="35%" cy="65%" r="8" />
+                    <circle cx="65%" cy="65%" r="8" />
+
+                    <circle cx="50%" cy="90%" r="8" />
+                </g>
+            </svg>
+        </div>
+        <img class="cancel_img fadein" src="static/images/cancel.png" alt="cancel image" onclick="deselected()">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
+    <script src="node_modules/pattern-lock-js/dist/patternlock.js" charset="utf-8"></script>
+    <script src="src/srcript.js"></script>
+</body>
+</html>

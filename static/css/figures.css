@@ -1,0 +1,45 @@
+.carousel-item .square {
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 68.41%;
+    /*min-width: 190px;*/
+    z-index: 1;
+    border: 4px solid white;
+    box-shadow: inset 0 0 35px 1px var(--col), 0 0 35px 1px var(--col);
+}
+
+.carousel-item .diamond{
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 107.31%;
+    /*min-width: 220px;*/
+    transform: rotate(45deg);
+    border: 4px solid white;
+    box-shadow: inset 0 0 35px 5px var(--col), 0 0 35px 5px var(--col);
+}
+
+.circle {
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 48.5%;
+    /*min-width: 530px;*/
+    border: 4px solid white;
+    box-shadow: inset 0 0 35px 5px var(--col), 0 0 35px 5px var(--col);
+    border-radius: 50%; /* Makes it a circle */
+    
+}
+
+.s{
+    aspect-ratio: 1/1;
+    width: 40.5%;
+    /*min-width: 442.6px;*/
+}
+
+.bg_circle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0px solid var(--col);
+    box-shadow: inset 0 0 0px 100px var(--col), 0 0 150px 150px var(--col);
+    border-radius: 50%; /* Makes it a circle */
+}
